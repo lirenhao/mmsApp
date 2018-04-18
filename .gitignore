@@ -1,0 +1,7 @@
+.idea
+hooks/
+node_modules/
+platforms/
+plugins/
+!platforms/debug.keystore
+package-lock.json
