@@ -7,7 +7,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="http://10.2.53.166:8080/mobilelogin/index.do" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" launch-external="no"/>
     <allow-intent href="http://*/*" />
