@@ -7,10 +7,11 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="http://10.2.53.166:8080/mobilelogin/index.do" />
+    <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <allow-navigation href="http://*/*" />
-    <allow-navigation href="https://*/*" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
@@ -19,9 +20,22 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>需要相机访问拍照获得优惠券信息展示的图片</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+            <string>需要访问相册从那里获得优惠券信息展示的图片</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+            <string>需要你的位置用来查找附近的优惠券信息</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+            <string>需要访问相册保存图片</string>
+        </edit-config>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^6.3.0"/>
-    <engine name="ios" spec="^4.5.4"/>
+    <engine name="android" spec="^6.3.0" />
+    <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
 </widget>
