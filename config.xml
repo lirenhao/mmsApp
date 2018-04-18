@@ -9,9 +9,8 @@
     </author>
     <content src="http://10.2.53.166:8080/mobilelogin/index.do" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <access origin="*" launch-external="no"/>
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
