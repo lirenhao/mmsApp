@@ -28,7 +28,6 @@
 
 /*登陆页输入框 图标*/
 .Mobile-login-input .ons-icon {
-    width: calc(100% - 78px);
     position: absolute;
     margin-left: 18px;
     margin-top: 8px;
@@ -39,26 +38,27 @@
 /*登录页输入框宽度调整*/
 .Mobile-login-input ons-input {
     width: calc(100% - 50px);
+    margin-left: 46px;
     border-bottom: 0;
 }
 
 .Mobile-login-input .text-input {
-    width: 100%;
-    margin-top: -23px;
     font-size: 13px;
-}
+    margin-top: 6px;
+ }
 
 /*登录页安卓下的样式调整*/
 .Mobile-login-input .text-input--material {
     background-image: none;
-    margin-top: 0;
+    margin-top: 10px;
 }
 .Mobile-login-input .text-input--material__label--active {
     color: #dd3623;
 }
 
 .Mobile-login-input .text-input--material__label {
-    font-size: 14px;
+    font-size: 13px;
+    margin-top: 11px;
 }
 
 /*登录按钮*/
@@ -75,6 +75,7 @@
     text-align: center;
 }
 
+/*登录界面错误弹出按钮*/
 .button--Mobile-error-btn {
     background: none;
     color: #dd3623;
@@ -86,3 +87,60 @@
     padding-bottom: 0;
     margin-top: 30px;
 }
+
+
+/* Main 界面 */
+.toolbar {
+    background: linear-gradient(to right,#fe7291,#f3451e);
+}
+.bottom-bar, .toolbar__center, .toolbar__title,
+.toolbar-button {
+    color: #fff;
+}
+
+/* 侧边栏 */
+.sidebar-bg .page__background {
+    background: #2c3b4e;
+}
+
+.sidebar-bg .list {
+    background: none;
+}
+
+.sidebar-bg .list .list-item {
+    padding-left: 0;
+}
+
+.sidebar-bg .list-item__center {
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #47425b;
+}
+.sidebar-bg .list:nth-child(1) .list-item {
+    margin-top: 40px;
+}
+
+.sidebar-bg .list-item__center .ons-icon {
+    font-size: 24px;
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.sidebar-bg .yellow {
+    color: #ffcc00;
+}
+
+.sidebar-bg .red {
+    color: #f33a55;
+}
+
+
+
+
+
+
+
+
+
+
+
