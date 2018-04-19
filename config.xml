@@ -21,13 +21,13 @@
     </platform>
     <platform name="ios">
         <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
-            <string>需要相机访问拍照获得优惠券信息展示的图片</string>
+            <string>需要相机访问拍照获得展示的图片</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
-            <string>需要访问相册从那里获得优惠券信息展示的图片</string>
+            <string>需要访问相册从那里获得展示的图片</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
-            <string>需要你的位置用来查找附近的优惠券信息</string>
+            <string>需要你的位置</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
             <string>需要访问相册保存图片</string>
@@ -35,7 +35,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^6.3.0" />
+    <engine name="android" spec="^6.4.0" />
     <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
