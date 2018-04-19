@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="css/onsenui.min.css">
     <link rel="stylesheet" href="css/onsen-css-components.min.css">
     <link rel="stylesheet" href="css/dropzone.min.css"/>
+    <link rel="stylesheet" href="css/Mobile-style.css"/>
     <script src="js/onsenui.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.validate.messages_zh.min.js"></script>
     <script src="js/dropzone.min.js"></script>
     <script type="text/javascript">
+        ons.ready(function () {
+
+        });
+
         document.addEventListener('postpush', function (event) {
             var page = event.enterPage;
             if (page.id === 'mainPage')
-                document.getElementById('menu').load('http://10.2.53.166:8080/mobilelogin/menu.do');
+                document.getElementById('menu').load('../mobilelogin/menu.do');
+            if (page.id === 'loginPage')
+                document.getElementById('menu').load('menu.html');
         });
 
         function menuOpen() {
@@ -32,10 +39,12 @@
         };
     </script>
 </head>
+
 <body>
+
 <ons-splitter>
     <ons-splitter-side id="menu" side="right" width="220px" collapse swipeable></ons-splitter-side>
-    <ons-navigator id="content" page="http://10.2.53.166:8080/mobilelogin/validate.do"></ons-navigator>
+    <ons-navigator id="content" page="../mobilelogin/validate.do"></ons-navigator>
 </ons-splitter>
 
 <ons-template id="main.html">
@@ -52,6 +61,10 @@
         </ons-toolbar>
         检查网络重新请求
     </ons-page>
+</ons-template>
+
+<ons-template id="menu.html">
+    <ons-page></ons-page>
 </ons-template>
 </body>
 </html>

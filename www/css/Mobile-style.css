@@ -1,0 +1,88 @@
+/*机具管理平台 手机端样式*/
+
+/*登陆大背景*/
+.Mobile-login-bg {
+    position: absolute;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+}
+
+/*登陆页logo*/
+.Mobile-logo {
+    width: 38%;
+    margin-left: 31%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*登陆页输入框*/
+.Mobile-login-input {
+    width: 80%;
+    margin-left: 10%;
+    background: #fff;
+    height: 42px;
+    margin-top: 20px;
+    border-radius: 28px;
+}
+
+/*登陆页输入框 图标*/
+.Mobile-login-input .ons-icon {
+    width: calc(100% - 78px);
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 8px;
+    font-size: 26px;
+    color: #888;
+}
+
+/*登录页输入框宽度调整*/
+.Mobile-login-input ons-input {
+    width: calc(100% - 50px);
+    border-bottom: 0;
+}
+
+.Mobile-login-input .text-input {
+    width: 100%;
+    margin-top: -23px;
+    font-size: 13px;
+}
+
+/*登录页安卓下的样式调整*/
+.Mobile-login-input .text-input--material {
+    background-image: none;
+    margin-top: 0;
+}
+.Mobile-login-input .text-input--material__label--active {
+    color: #dd3623;
+}
+
+.Mobile-login-input .text-input--material__label {
+    font-size: 14px;
+}
+
+/*登录按钮*/
+.button--Mobile-login-btn {
+    width: 66%;
+    height: 42px;
+    margin-left: 17%;
+    background: #dd3623;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 56px;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.button--Mobile-error-btn {
+    background: none;
+    color: #dd3623;
+    font-size: 14px;
+    border: 1px solid #dd3623;
+    border-radius: 8px;
+    width: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+}
