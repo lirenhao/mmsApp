@@ -1,5 +1,14 @@
 /*机具管理平台 手机端样式*/
 
+/* 安卓下空标题居中 */
+.toolbar--material__left:empty, .toolbar--material__right:empty {
+    min-width: 72px;
+}
+
+.button--material {
+    box-shadow: none;
+}
+
 /*登陆大背景*/
 .Mobile-login-bg {
     position: absolute;
@@ -90,6 +99,19 @@
 
 
 /* Main 界面 */
+
+/* 安卓下样式优化 */
+.toolbar--material {
+    box-shadow: none;
+}
+.toolbar--material__center {
+    text-align: center;
+}
+.back-button__icon {
+    fill: #fff !important;
+}
+
+/* head 样式 */
 .toolbar {
     background: linear-gradient(to right,#fe7291,#f3451e);
 }
@@ -116,8 +138,9 @@
     font-size: 14px;
     border-bottom: 1px solid #47425b;
 }
+
 .sidebar-bg .list:nth-child(1) .list-item {
-    margin-top: 40px;
+    margin-top: 44px;
 }
 
 .sidebar-bg .list-item__center .ons-icon {
@@ -135,12 +158,159 @@
 }
 
 
+/* 派发复合管理页面 */
+.list-header--search-list {
+    padding-left: 0;
+    padding-top: 10px;
+    background-image: none;
+    background: #f9edd4;
+}
+
+.list-header--search-list .list-item {
+    margin-top: 12px;
+}
+
+.list-header--search-list .list-item >label {
+    font-size: 14px;
+    font-weight: 400;
+    width: 120px;
+    text-align: right;
+    margin-top: 16px;
+    color: #dd3623;
+}
+
+.list-header--short .list-item >label {
+    width: 100px !important;
+}
+
+.list-header--search-list .list-item > ons-input {
+    width: calc(100% - 168px);
+    margin-left: 10px;
+    color: #dd3623;
+}
+
+.list-header--search-list .list-item > ons-input .text-input {
+    font-size: 14px;
+    color: #dd3623;
+}
+
+.list-header--search-list .text-input--underbar {
+    border-bottom: 1px solid #dd3623;
+}
+
+.list-header--search-list .text-input--material {
+    background-image: none;
+}
+
+.button--search-btn {
+    width: 90%;
+    margin-left: 5%;
+    background: #dd3623;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0;
+    height: 34px;
+}
+
+/*工单处理按钮*/
+.button--operation-btn {
+    color: #fc6e51;
+}
+
+/*统一回执按钮*/
+.button--receipt-btn {
+    color: #24cd70;
+}
+
+.button--operation-btn, .button--receipt-btn {
+    font-size: 14px;
+}
+
+/* 界面低端 分页样式 */
+.bottom-bar {
+    padding: 10px 14px;
+}
+
+.bottom-bar .button {
+    float: right;
+    background: none;
+    color: #24cd70;
+    font-size: 14px;
+    padding: 0;
+}
+.button--mid-btn {
+    min-width: 64px;
+    text-align: center;
+}
+
+.button--end-btn {
+    padding: 0 10px !important;
+    color: #fc6e51 !important;
+}
+
+.button--neighbor-btn {
+    color: #666 !important;
+}
 
 
+/* 终端审核界面 */
+.list-header--audit {
+    padding-left: 0;
+    padding-top: 10px;
+    background-image: none;
+    background: #fff;
+}
 
+.audit-upper-part {
+    margin-left: 14px;
+}
 
+.audit-upper-part p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.dropzone {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: none;
+    background: linear-gradient(to bottom,#fe696b,#efa788);
+    border-radius: 6px;
+    padding-bottom: 80px;
+}
 
+.dz-preview.dz-complete.dz-image-preview {
+    float: left;
+    width: 42%;
+    border-radius: 4px;
+}
 
+.dropzone .dz-preview {
+    margin: calc(5% - 4px) !important;
+}
 
+.audit-btn {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -60px;
+}
 
+.audit-btn ons-button {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 26px;
+    width: 34%;
+    font-size: 14px;
+    font-weight: 600;
+}
+.audit-btn ons-button:nth-child(1) {
+    margin-right: 14px;
+}
