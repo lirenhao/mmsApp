@@ -23,7 +23,7 @@
         document.addEventListener('postpush', function (event) {
             var page = event.enterPage;
             if (page.id === 'mainPage')
-                document.getElementById('menu').load('http://10.2.53.166:8080/mobilelogin/menu.do');
+                document.getElementById('menu').load('http://10.2.53.79:8080/MMS/mobilelogin/menu.do');
             if (page.id === 'loginPage')
                 document.getElementById('menu').load('menu.html');
         });
@@ -45,7 +45,7 @@
 
 <ons-splitter>
     <ons-splitter-side id="menu" side="right" width="220px" collapse swipeable></ons-splitter-side>
-    <ons-navigator id="content" page="http://10.2.53.166:8080/mobilelogin/validate.do"></ons-navigator>
+    <ons-navigator id="content" page="http://10.2.53.79:8080/MMS/mobilelogin/validate.do"></ons-navigator>
 </ons-splitter>
 
 <ons-template id="main.html">
