@@ -171,6 +171,7 @@
     padding-top: 10px;
     background-image: none;
     background: #f9edd4;
+    padding-right: 0;
 }
 
 .list-header--search-list .list-item {
@@ -180,7 +181,7 @@
 .list-header--search-list .list-item >label {
     font-size: 14px;
     font-weight: 400;
-    width: 120px;
+    width: 96px;
     text-align: right;
     margin-top: 16px;
     color: #dd3623;
@@ -194,6 +195,10 @@
     width: calc(100% - 168px);
     margin-left: 10px;
     color: #dd3623;
+}
+
+.list-header--search-list .date > ons-input {
+    width: calc(100% - 244px);
 }
 
 .list-header--search-list .list-item > ons-input .text-input {
@@ -221,6 +226,13 @@
     font-weight: 500;
     padding: 0;
     height: 34px;
+}
+
+
+/* 起止日期 */
+.date {
+    padding-left: 0 !important;
+    padding-right: 14px;
 }
 
 /*工单处理按钮*/
@@ -348,21 +360,131 @@
     width: 100%;
     padding: 8px 0;
     background: #fff;
-    border-top: 1px solid rgba(224, 218, 218, 0.51);
+    border-top: 1px solid #ccc;
 }
 
 .btns-group .button {
     width: 45.5%;
     text-align: center;
     margin-left: 3%;
+    font-size: 15px;
+    border-radius: 24px;
 }
 
 
 
 /*两个按钮的按钮组*/
 .btns-group .button:nth-child(1) {
-    background: #ffc12a;
+    background: rgba(255, 193, 42, 0.9);
 }
 .btns-group .button:nth-child(2) {
-    background: #FF7176;
+    background: rgba(255, 113, 118, 0.9);
 }
+
+
+
+
+/* 回执界面样式 */
+
+.list-header--receipt-audit {
+    padding: 12px 0 4px 0;
+    background-image: none;
+    background: #f9edd4;
+}
+
+.list-header--receipt-audit .list-item .list-item__center {
+    padding: 0;
+    background-image: none;
+    min-height: 26px;
+    color: #dd3623;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.list-header--receipt-audit .list-item .list-item__center > ons-input,
+.list-header--receipt-audit .list-item .list-item__center > ons-input .text-input,
+.list-header--receipt-audit .list-item .list-item__center >select {
+    color: #dd3623;
+    font-size: 14px;
+}
+
+.list-header--receipt-audit .list-item .list-item__center > ons-input,
+.list-header--receipt-audit .list-item .list-item__center >select {
+    margin-left: 12px;
+}
+
+.list-header--receipt-audit .list-item .list-item__center .text-input--material {
+    background-image: none;
+}
+
+
+.list-item--audit-head .list-item__center .text-input {
+    font-weight: 600;
+    color: #ffcc00;
+    margin-top: -8px !important;
+    border: 1px solid #ffcc00;
+    height: 24px;
+    border-radius: 4px;
+    text-indent: .6em;
+}
+.list-item--audit-head .list-item__center .text-input--material {
+    background-image: none;
+}
+
+/* 回执图片 */
+.receipt-picture {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin: 8px 0 4px 14px;
+}
+
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    color: red;
+    top: 5px;
+    right: 6px;
+    font-size: 12px;
+    text-decoration: none;
+    z-index: 99;
+}
+/* 添加图片 */
+.add {
+    padding-bottom: 80px;
+}
+
+.add-images {
+    width: 100%;
+    text-align: center;
+}
+
+.add-images .button {
+    position: relative;
+    top: -70px;
+    width: 136px;
+    font-size: 16px;
+    border-radius: 26px;
+    background: rgba(243, 106, 101, 0.55);
+}
+
+
+.receipt-submit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 42px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(221, 54, 35, 0.9);
+    border-radius: 0;
+}
+
+
+
+
+
+
+
